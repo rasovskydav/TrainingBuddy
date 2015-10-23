@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            >
+
+            <ImageView
+                android:id="@+id/sun_icon"
+                android:src="@drawable/sunset"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <!-- Time of Sunset -->
+            <TextView
+                android:id="@+id/sunset_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunset_at"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+
+                android:textSize="25dp"/>
+
+            <!-- text: Sunset -->
+            <TextView
+                android:id="@+id/sunset_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunset"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBaseline="@id/sunset_time"
+                />
+
+            <!-- Time Remaining to Sunset -->
+            <TextView
+                android:id="@+id/sunset_time_remaining"
+                android:text="@string/remaining_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sunset_time"
+                android:layout_alignRight="@id/sunset_time"
+
+                android:paddingTop="5dp"
+
+                android:textSize="25dp"/>
+
+            <!-- text: Remaining to Sunset-->
+            <TextView
+                android:id="@+id/sunset_remaining_text"
+                android:text="@string/remaining"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@id/sunset_time_remaining"
+                android:layout_below="@id/sunset_text"/>
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <!-- Start activity -->
+        <!-- go to Choose Sport -->
+        <Button
+            android:id="@+id/main_menu_activity"
+            android:text="@string/main_menu_activity"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+
+            android:layout_centerInParent="true"
+
+            android:background="#FF0099CC"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true">
+
+            <!-- go to Calendar -->
+            <Button
+                android:text="@string/main_menu_calendar"
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <!-- go to Statistics -->
+            <Button
+                android:text="@string/main_menu_statistics"
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+            <!-- Make new activity to add to calendar-->
+            <Button
+                android:text="@string/main_menu_new_activity"
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <!-- go to Settings-->
+            <Button
+                android:text="@string/main_menu_settings"
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>

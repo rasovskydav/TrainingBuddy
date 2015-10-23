@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TrainingBuddy</string>
+    <string name="action_settings">Settings</string>
+    <string name="short_text">Lorem</string>
+    <string name="long_text">Lorem ipsum bla bla</string>
+    <string name="sunset">Západ slunce v:</string>
+    <string name="sunset_at">00:00</string>
+    <string name="remaining">Zbývá:</string>
+    <string name="remaining_at">00h 00min</string>
+    <string name="main_menu_activity">Zahájení aktivity</string>
+    <string name="main_menu_calendar">Kalendář</string>
+    <string name="main_menu_statistics">Statistiky</string>
+    <string name="main_menu_new_activity">Vytvořit\naktivitu</string>
+    <string name="main_menu_settings">Nastavení</string>
+</resources>
